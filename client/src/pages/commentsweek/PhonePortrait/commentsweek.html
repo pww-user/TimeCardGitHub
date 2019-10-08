@@ -1,0 +1,47 @@
+<ion-header data-comp-id="header.1">
+    <ion-navbar color="primary" data-comp-id="navbar.1">
+        <ion-buttons data-comp-id="buttons.1" start="">
+            <button (click)="action('back')" data-comp-id="button.1" icon-only="" ion-button="">
+                <ion-icon class="ion-ios-arrow-back-outline"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title data-comp-id="title.1">
+            <span ion-text="">Enter Comments</span>
+        </ion-title>
+        <ion-buttons data-comp-id="buttons.2" end="">
+            <button color="primary" data-comp-id="button.2" icon-only="" ion-button="">
+                <ion-icon class="ion-md-home"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content class="content-contrast" data-comp-id="content.1">
+    <ion-row class="row-light" data-comp-id="row.1">
+        <ion-col data-comp-id="column.1" style="text-align: center; padding: 5px 10px;">
+            <ion-icon (click)="go('TimeComments')" class="fa fa-comment-o" color="primary" data-comp-id="icon.1" style="font-size: 28px; float: left; margin: 0px 5px;"></ion-icon>
+            <div color="dark" data-comp-id="text.1" ion-text="" style="float: none; font-size: 16px; margin: 5px;">December 31, 2018 - January 5, 2017</div>
+        </ion-col>
+    </ion-row>
+    <ion-card data-comp-id="card.1" style="padding: 5px; margin: 12px 12px 12px 12px;">
+        <ion-item data-comp-id="textarea.1">
+            <ion-label stacked=""></ion-label>
+            <ion-textarea [readonly]="true" placeholder="Type here..."></ion-textarea>
+        </ion-item>
+    </ion-card>
+</ion-content>
+<ion-footer data-comp-id="footer.1" style="background-color: rgba(255, 255, 255, 0.302);">
+    <ion-row class="row-contrast" data-comp-id="row.2" style="padding: 10px;">
+        <ion-col data-comp-id="column.2">
+            <button (click)="go('Home')" block="" color="medium" data-comp-id="button.3" ion-button="" outline="" small="" style="background-color: #fff;">
+                <ion-icon class="ion-ios-close" color="dark" style="font-size: 24px; padding: 0px 10px;"></ion-icon>
+                <span ion-text="">Cancel</span>
+            </button>
+        </ion-col>
+        <ion-col data-comp-id="column.3">
+            <button block="" color="good" data-comp-id="button.4" ion-button="" small="">
+                <ion-icon class="ion-ios-checkmark" style="font-size: 24px; padding: 0px 10px;"></ion-icon>
+                <span ion-text="">Save</span>
+            </button>
+        </ion-col>
+    </ion-row>
+</ion-footer>

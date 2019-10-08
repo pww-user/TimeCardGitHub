@@ -1,0 +1,24 @@
+<ion-menu [content]="content" id="menu-component">
+    <ion-header data-comp-id="header.1">
+        <ion-toolbar color="primary" data-comp-id="toolbar.1" menuClose="">
+            <ion-title data-comp-id="title.1">
+                <span data-comp-id="text.1" ion-text="">Menu</span>
+            </ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content data-comp-id="content.1" menuClose="">
+        <ion-list data-comp-id="list.1">
+            <button (click)="go('settings')" data-comp-id="button.1" detail-none=""
+                ion-item=""><span>Settings</span>
+                <ion-icon class="fa fa-gear" color="contrast" data-comp-id="icon.1"
+                    item-start=""></ion-icon>
+            </button>
+            <ion-item (click)="logout()" data-comp-id="item.1" menuClose="">
+                <ion-icon class="ion-md-exit" color="contrast" data-comp-id="icon.3"
+                    item-start=""></ion-icon>
+                <div data-comp-id="text.3" ion-text="">Logout</div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav #content=""></ion-nav>

@@ -1,0 +1,196 @@
+<ion-header data-comp-id="header.1">
+    <ion-navbar color="primary" data-comp-id="navbar.1">
+        <ion-buttons data-comp-id="buttons.1" left="" start="">
+            <button data-comp-id="button.1" icon-only="" ion-button="" menuToggle="">
+                <ion-icon class="ion-ios-menu"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title data-comp-id="title.1">
+            <span ion-text="">Timecards</span>
+        </ion-title>
+        <ion-buttons data-comp-id="buttons.2" end="">
+            <button data-comp-id="button.2" icon-only="" ion-button="">
+                <ion-icon class="ion-ios-home"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content class="content-light" data-comp-id="content.1">
+    <ion-row data-comp-id="row.1" style="background-color: #ffffff;">
+        <ion-col data-comp-id="column.1" style="max-width: 260px; min-width: 260px; padding: 0px;">
+            <button clear="" data-comp-id="button.3" ion-button="" large="" ngClass="top-button selected" style="font-size: 18px; margin: 5px 0 0 0;">
+                <ion-icon class="fa fa-clock-o"></ion-icon>
+                <span style="font-size: 20px;padding: 4px 0 0;">Current Timecard</span>
+            </button>
+        </ion-col>
+        <ion-col data-comp-id="column.2" style="max-width: 260px; min-width: 260px; padding: 0px;">
+            <button clear="" color="dark" data-comp-id="button.4" ion-button="" large="" ngClass="top-button" style="font-size: 18px; margin: 5px 0 0 0;">
+                <ion-icon class="fa fa-calendar"></ion-icon>
+                <span style="font-size:20px;padding: 4px 0 0;">View Previous</span>
+            </button>
+        </ion-col>
+        <ion-col data-comp-id="column.3"></ion-col>
+    </ion-row>
+    <ion-row class="row-light" data-comp-id="row.2">
+        <ion-col data-comp-id="column.4" style="max-width: 80px; min-width: 80px; text-align: center; padding: 10px 5px;">
+            <button color="primary" data-comp-id="button.5" ion-button="" icon-only="" ngClass="icon-round" round="" style="font-size: 24px; margin: 10px 5px 5px;">
+                <ion-icon class="fa fa-plus" color="light"></ion-icon>
+            </button>
+            <button data-comp-id="button.6" ion-button="" icon-only="" ngClass="icon-round" round="" style="font-size: 24px; margin: 5px;">
+                <ion-icon class="ion-md-star" color="light"></ion-icon>
+            </button>
+            <button data-comp-id="button.7" ion-button="" icon-only="" ngClass="icon-round" outline="" round="" style="font-size: 24px; margin: 5px;">
+                <ion-icon class="fa fa-save" color="primary"></ion-icon>
+            </button>
+            <button data-comp-id="button.8" ion-button="" icon-only="" ngClass="icon-round" outline="" round="" style="font-size: 24px; margin: 5px;">
+                <ion-icon class="ion-md-arrow-round-forward" color="primary"></ion-icon>
+            </button>
+        </ion-col>
+        <ion-col data-comp-id="column.5">
+            <ion-row data-comp-id="row.3">
+                <ion-col data-comp-id="column.6" style="max-width: 300px;">
+                    <ion-item color="light" data-comp-id="select.1">
+                        <ion-label color="primary">Date</ion-label>
+                        <ion-select [selectOptions]="{cssClass: 'select-full'}">
+                            <ion-option data-comp-id="option.1"></ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col data-comp-id="column.7"></ion-col>
+            </ion-row>
+            <ion-row class="project-row header-row table-row" data-comp-id="row.4">
+                <ion-col data-comp-id="column.8">
+                    <div data-comp-id="text.1" ion-text="" style="margin: 0 0 0 15px;">Project</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.9">
+                    <div data-comp-id="text.2" ion-text="">Sat</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.10">
+                    <div data-comp-id="text.3" ion-text="">Sun</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.11">
+                    <div data-comp-id="text.4" ion-text="">Mon</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.12">
+                    <div data-comp-id="text.5" ion-text="">Tue</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.13">
+                    <div data-comp-id="text.6" ion-text="">Wed</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.14">
+                    <div data-comp-id="text.7" ion-text="">Thu</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.15">
+                    <div data-comp-id="text.8" ion-text="">Fri</div>
+                </ion-col>
+                <ion-col col-2="" data-comp-id="column.16"></ion-col>
+                <ion-col data-comp-id="column.17" style="max-width: 20px;"></ion-col>
+            </ion-row>
+            <ion-row class="task-row header-row table-row" data-comp-id="row.5">
+                <ion-col data-comp-id="column.18">
+                    <div data-comp-id="text.9" ion-text="" style="margin: 0 0 0 15px;">Task</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.19">
+                    <div data-comp-id="text.10" ion-text="">Apr 01</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.20">
+                    <div data-comp-id="text.11" ion-text="">Apr 02</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.21">
+                    <div data-comp-id="text.12" ion-text="">Apr 03</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.22">
+                    <div data-comp-id="text.13" ion-text="">Apr 04</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.23">
+                    <div data-comp-id="text.14" ion-text="">Apr 05</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.24">
+                    <div data-comp-id="text.15" ion-text="">Apr 06</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.25">
+                    <div data-comp-id="text.16" ion-text="">Apr 07</div>
+                </ion-col>
+                <ion-col col-2="" data-comp-id="column.26"></ion-col>
+                <ion-col data-comp-id="column.27" style="max-width: 20px;"></ion-col>
+            </ion-row>
+            <ion-row *ngFor="let item of data.Entries;let i = index" class="input-row table-row" data-comp-id="row.6">
+                <ion-col align-self-center="" data-comp-id="column.28">
+                    <div [innerHTML]="item.Project" data-comp-id="text.17" ion-text="" style="color: #6d6f71; margin: 0 0 0 15px;">Task</div>
+                    <div [innerHTML]="item.Task" data-comp-id="text.18" ion-text="" style="margin: 0 0 0 15px;">Some text</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.29">
+                    <ion-item data-comp-id="input.1" style="background-color: #ffffff;">
+                        <ion-input placeholder="" type="text"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.30">
+                    <ion-item data-comp-id="input.2" style="background-color: #ffffff;">
+                        <ion-input placeholder="" type="text"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.31">
+                    <ion-item data-comp-id="input.3" style="background-color: #ffffff;">
+                        <ion-input placeholder="" type="text"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.32">
+                    <ion-item data-comp-id="input.4" style="background-color: #ffffff;">
+                        <ion-input placeholder="" type="text"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.33">
+                    <ion-item data-comp-id="input.5" style="background-color: #ffffff;">
+                        <ion-input placeholder="" type="text"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.34">
+                    <ion-item data-comp-id="input.6" style="background-color: #ffffff;">
+                        <ion-input placeholder="" type="text"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.35">
+                    <ion-item data-comp-id="input.7" style="background-color: #ffffff;">
+                        <ion-input placeholder="" type="text"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col align-self-center="" col-2="" data-comp-id="column.36" style="text-align: left; padding: 15px 20px 15px 0;">
+                    <div data-comp-id="text.19" ion-text="" style="font-size: 18px;">{{ sumHours ? sumHours(item) : 10.5 }}</div>
+                </ion-col>
+                <ion-col data-comp-id="column.37" style="max-width: 20px;">
+                    <button clear="" data-comp-id="button.9" ion-button="" icon-only="" style="font-size: 34px;">
+                        <ion-icon class="ion-md-more"></ion-icon>
+                    </button>
+                </ion-col>
+            </ion-row>
+            <ion-row class="total-row table-row" data-comp-id="row.7">
+                <ion-col data-comp-id="column.38" style="padding: 12px 0 12px 10px;">
+                    <div data-comp-id="text.20" ion-text="" style="margin: 0 0 0 15px;">Total</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.39" style="text-align: left; padding: 12px 0 12px 30px;">
+                    <div data-comp-id="text.21" ion-text="">{{ totalHoursByDay ? totalHoursByDay('Sat') : 0 }}</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.40" style="text-align: left; padding: 12px 0 12px 30px;">
+                    <div data-comp-id="text.22" ion-text="">{{ totalHoursByDay ? totalHoursByDay('Sun') : 0 }}</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.41" style="text-align: left; padding: 12px 0 12px 30px;">
+                    <div data-comp-id="text.23" ion-text="">{{ totalHoursByDay ? totalHoursByDay('Mon') : 8 }}</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.42" style="text-align: left; padding: 12px 0 12px 30px;">
+                    <div data-comp-id="text.24" ion-text="">{{ totalHoursByDay ? totalHoursByDay('Tue') : 0 }}</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.43" style="text-align: left; padding: 12px 0 12px 30px;">
+                    <div data-comp-id="text.25" ion-text="">{{ totalHoursByDay ? totalHoursByDay('Wed') : 0 }}</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.44" style="text-align: left; padding: 12px 0 12px 30px;">
+                    <div data-comp-id="text.26" ion-text="">{{ totalHoursByDay ? totalHoursByDay('Thu') : 0 }}</div>
+                </ion-col>
+                <ion-col col-1="" data-comp-id="column.45" style="text-align: left; padding: 12px 0 12px 30px;">
+                    <div data-comp-id="text.27" ion-text="">{{ totalHoursByDay ? totalHoursByDay('Fri') : 0 }}</div>
+                </ion-col>
+                <ion-col col-2="" data-comp-id="column.46"></ion-col>
+                <ion-col data-comp-id="column.47" style="max-width: 20px;"></ion-col>
+            </ion-row>
+        </ion-col>
+    </ion-row>
+</ion-content>

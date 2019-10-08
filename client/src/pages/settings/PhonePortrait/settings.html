@@ -1,0 +1,33 @@
+<ion-header data-comp-id="header.1">
+    <ion-navbar color="primary" data-comp-id="navbar.1">
+        <ion-buttons data-comp-id="buttons.1" start="">
+            <button (click)="dismissModal()" color="light" data-comp-id="button.1"
+                icon-only="" ion-button="">
+                <ion-icon class="ion-ios-arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title data-comp-id="title.1">
+            <span ion-text=""></span>
+        </ion-title>
+    </ion-navbar>
+    <div class="container-primary" data-comp-id="div.1"
+        style="padding: 30px 0 40px 0px; border-bottom: 1px solid rgb(221,221,221);"
+        text-center="">
+        <div color="light" data-comp-id="text.1" ion-text=""
+            style="font-size: 18px; margin: 0 0 0;">Settings</div>
+    </div>
+</ion-header>
+<ion-content data-comp-id="content.1">
+    <div data-comp-id="touchid-enable-toggle.1">
+        <ion-item data-comp-id="toggle.1" no-lines="">
+            <ion-label>Enable {{getBiometricAuthType()}}</ion-label>
+            <ion-toggle (ionChange)="toggleTouchid($event)" [checked]="touchidEnabled()"></ion-toggle>
+        </ion-item>
+        <ion-row data-comp-id="row.1">
+            <ion-col data-comp-id="column.1">
+                <div color="dark" data-comp-id="text.2" ion-text="">All {{getBiometricAuthType()}}s
+                    stored on this device can be used to log into this app.</div>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-content>

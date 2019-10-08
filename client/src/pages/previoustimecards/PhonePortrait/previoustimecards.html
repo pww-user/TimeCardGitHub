@@ -1,0 +1,26 @@
+<ion-header data-comp-id="header.1">
+    <ion-navbar color="primary" data-comp-id="navbar.1">
+        <ion-buttons data-comp-id="buttons.2" left="">
+            <button data-comp-id="button.1" icon-only="" ion-button="" menuToggle="">
+                <ion-icon class="ion-ios-menu" name="menu"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title data-comp-id="title.1" text-center="">
+            <span ion-text="">Previous TimeCards</span>
+        </ion-title>
+        <ion-buttons data-comp-id="buttons.1" right=""></ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content data-comp-id="content.1">
+    <ion-list data-comp-id="list.1">
+        <ion-row data-comp-id="row.1">
+            <ion-col data-comp-id="column.1" style="padding: 0px;">
+                <ion-searchbar data-comp-id="searchbar.1"></ion-searchbar>
+            </ion-col>
+        </ion-row>
+        <ion-item (click)="action('Group[item].timecard', [i])" *ngFor="let item of data.Group;let i = index" data-comp-id="item.1">
+            <span [innerHTML]="item.Title" color="dark" data-comp-id="text.1" ion-text="" style="font-size: 15px;">Item title</span>
+            <ion-icon class="ion-ios-arrow-forward-outline" color="primary" data-comp-id="icon.1" item-end=""></ion-icon>
+        </ion-item>
+    </ion-list>
+</ion-content>

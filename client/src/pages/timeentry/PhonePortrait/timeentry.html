@@ -1,0 +1,137 @@
+<ion-header data-comp-id="header.1">
+    <ion-navbar color="primary" data-comp-id="navbar.1">
+        <ion-title data-comp-id="title.1" text-center="">
+            <span ion-text="">Time Entry</span>
+        </ion-title>
+        <ion-buttons data-comp-id="buttons.1" left="">
+            <button data-comp-id="button.1" icon-only="" ion-button="" menuToggle="">
+                <ion-icon class="ion-ios-menu" name="menu"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content class="content-contrast" data-comp-id="content.1">
+    <ion-row class="row-light" data-comp-id="row.1">
+        <ion-col data-comp-id="column.1" style="text-align: center; padding: 5px 10px;">
+            <div color="dark" data-comp-id="text.1" ion-text=""
+                style="float: none; font-size: 16px; margin: 5px;">{{data.lastWeekDate}}
+                -
+                {{data.periodEndDate}}</div>
+        </ion-col>
+    </ion-row>
+    <ion-row class="row-contrast" data-comp-id="row.2" style="padding: 0px 2px;">
+        <ion-col (click)="scrollLeft()" data-comp-id="column.2"
+            style="text-align: left; padding: 15px 10px;">
+            <ion-icon class="fa fa-angle-double-left" color="highlight"
+                data-comp-id="icon.1" style="margin: 0 1px 2px; font-size: 28px;"></ion-icon>
+        </ion-col>
+        <ion-col *ngFor="let item of data.shownDefaultDays;let i = index"
+            data-comp-id="column.3" style="text-align: center; border-top: 0px;">
+            <div [innerHTML]="item.dayOfWeek" color="light" data-comp-id="text.2"
+                ion-text="" style="font-size: 14px; float: none; font-weight: 300;">Mon</div>
+            <div [innerHTML]="item.date" color="light" data-comp-id="text.3" ion-text=""
+                style="font-size: 22px; float: none; font-weight: normal;">30</div>
+        </ion-col>
+        <ion-col (click)="scrollRight()" data-comp-id="column.4"
+            style="text-align: right; padding: 15px 10px;">
+            <ion-icon class="fa fa-angle-double-right" color="highlight"
+                data-comp-id="icon.2" style="margin: 0 1px 2px; font-size: 28px;"></ion-icon>
+        </ion-col>
+    </ion-row>
+    <ion-card *ngFor="let item of data.Entries;let i = index" color="light"
+        data-comp-id="card.1" style="padding: 5px; margin: 5px 12px 12px 12px;">
+        <ion-row data-comp-id="row.3" style="border-bottom: 0px;">
+            <ion-col data-comp-id="column.5" style="padding: 5px 10px;">
+                <div color="contrast" data-comp-id="text.4" ion-text=""
+                    style="line-height: 20px; font-size: 16px;">Project -
+                    {{item.Project}}</div>
+                <div [innerHTML]="item.Task" color="dark" data-comp-id="text.5" ion-text=""
+                    style="line-height: 20px;">Activity- Sed do Eiusmod Incididunt</div>
+            </ion-col>
+            <ion-col col-1="" data-comp-id="column.6">
+                <ion-icon (click)="action('newProject')" class="ion-ios-arrow-forward-outline"
+                    color="primary" data-comp-id="icon.3"
+                    style="font-size: 28px; float: right; margin: 5px;"></ion-icon>
+            </ion-col>
+        </ion-row>
+        <ion-row data-comp-id="row.4" style="padding: 10px 2px 0px 2px;">
+            <ion-col data-comp-id="column.7" style="text-align: center;">
+                <ion-icon (click)="action('Entries[item].comments', [i])"
+                    *ngIf="item.hasComment" class="fa fa-commenting" color="primary"
+                    data-comp-id="icon.4" style="margin: 8px 0px; font-size: 28px;"></ion-icon>
+                <ion-icon (click)="action('Entries[item].comments', [i])"
+                    *ngIf="!item.hasComment" class="fa fa-comment-o" color="primary"
+                    data-comp-id="icon.5" style="margin: 8px 0px; font-size: 28px;"></ion-icon>
+            </ion-col>
+            <ion-col *ngFor="let item of item.shownTimes;let i = index"
+                data-comp-id="column.8" style="border-top: 0px;">
+                <ion-item data-comp-id="input.1"
+                    style="font-size: 13px; border-top: 1px solid rgb(221,221,221); border-right: 1px solid rgb(221,221,221); border-bottom: 1px solid rgb(221,221,221); border-left: 1px solid rgb(221,221,221); padding: 0px;">
+                    <ion-input [(ngModel)]="item.time" placeholder="0" type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col data-comp-id="column.9">
+                <div data-comp-id="text.6" ion-text=""
+                    style="margin: 13px 5px; font-size: 16px;">00</div>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+    <ion-item-sliding data-comp-id="item-sliding.1">
+        <ion-item-options data-comp-id="item-options.1" side="right">
+            <button color="medium" data-comp-id="button.2" ion-button="">
+                <ion-icon class="ion-ios-arrow-dropright-circle"></ion-icon>
+                <span>Cancel</span>
+            </button>
+            <button color="danger" data-comp-id="button.3" ion-button="">
+                <ion-icon class="ion-ios-trash"></ion-icon>
+                <span>Remove</span>
+            </button>
+        </ion-item-options>
+    </ion-item-sliding>
+    <touchid-save [authRequest]="appService ? appService.getAuthRequest() : null"
+        data-comp-id="touchid-save.1" message="Would you like to use {{getBiometricAuthType()}} to login?"
+        title="{{getBiometricAuthType()}} Available"></touchid-save>
+</ion-content>
+<ion-footer data-comp-id="footer.1" style="background-color: #ffffff;">
+    <ion-row class="row-light" data-comp-id="row.5"
+        style="border-top: 1px solid #009bde; border-bottom: 1px solid #009bde; margin: 0px 0px; padding: 5px 12px;">
+        <ion-col data-comp-id="column.10" style="text-align: center;">
+            <div color="light" data-comp-id="text.7" ion-text="">0</div>
+        </ion-col>
+        <ion-col *ngFor="let item of data.shownDayTotals;let i = index"
+            data-comp-id="column.11" style="text-align: center;">
+            <div [innerHTML]="item.total" data-comp-id="text.8" ion-text="">0</div>
+        </ion-col>
+        <ion-col data-comp-id="column.12" style="text-align: center;">
+            <div [innerHTML]="data.weekTotal" data-comp-id="text.9" ion-text=""
+                style="font-size: 16px; font-weight: bold;">0</div>
+        </ion-col>
+    </ion-row>
+    <ion-row class="row-contrast" data-comp-id="row.6" style="padding: 10px;">
+        <ion-col align-self-center="" data-comp-id="column.13">
+            <button (click)="action('save')" block="" color="good"
+                data-comp-id="button.4" ion-button="" outline="" small=""
+                style="background-color: #fff;">
+                <ion-icon class="ion-ios-checkmark" color="good"
+                    style="font-size: 24px; padding: 0px 10px;"></ion-icon>
+                <span ion-text="">Save</span>
+            </button>
+        </ion-col>
+        <ion-col data-comp-id="column.14">
+            <button (click)="action('newProject')" color="contrast"
+                data-comp-id="button.5" ion-button="" large=""
+                style="padding: 0px 3px;">
+                <ion-icon class="ion-ios-add-circle" style="font-size: 24px; padding: 0px 10px;"></ion-icon>
+                <span ion-text="" style="padding: 0px 5px 0 0; font-size: 15px;">Add<br>Project</span>
+            </button>
+        </ion-col>
+        <ion-col align-self-center="" data-comp-id="column.15">
+            <button (click)="action('submit')" block="" color="good"
+                data-comp-id="button.6" ion-button="" small="">
+                <ion-icon class="ion-ios-arrow-round-forward-outline"
+                    style="font-size: 24px; padding: 0px 10px;"></ion-icon>
+                <span ion-text="">Submit</span>
+            </button>
+        </ion-col>
+    </ion-row>
+</ion-footer>

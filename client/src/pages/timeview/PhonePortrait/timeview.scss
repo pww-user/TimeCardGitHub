@@ -1,0 +1,20 @@
+screen-timeview-phoneportrait {
+    .card-md {
+        border-right: 1px solid color($colors, primary, base);
+    }
+  
+    .card-ios .item-ios.item-block .item-inner {
+         padding-right: 1px;
+    }
+
+    ion-item.item.item-input {
+        padding-left: 0px;
+        .item-inner {
+            padding-right: 0px;
+            .text-input {
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}

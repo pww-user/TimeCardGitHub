@@ -1,0 +1,68 @@
+screen-recenttimecards-desktop {
+    .top-button {
+        font-size: 24px;
+
+        &.selected {
+            .button-inner {
+                border-bottom: 1px solid color($colors, primary, base);
+            }
+        }
+
+        .button-inner {
+            padding-bottom: 10px;
+        }
+
+        ion-icon::before {
+            padding: 10px;
+        }
+    }
+
+    .icon-round {
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        font-size: 34px;
+        padding: 0px;
+    }
+
+    .table-row {
+        ion-col {
+            min-width: 90px;
+        }
+    }
+
+    .header-row {
+        background-color: #96d5e8;
+        text-transform: uppercase;
+    }
+
+    .project-row {
+        color: #6d6f71;  
+    }
+
+    .task-row {
+        color: #ffffff;
+    }
+
+    .input-row {
+        background-color: #d6dee5;
+        border-bottom: 1px solid color($colors, primary, base);
+        
+        ion-item.item-input {
+            padding: 0px;
+            width: 65px;
+
+            .item-inner {
+                padding: 0px;
+            }
+        }
+        ion-input {
+            margin: 0px;
+            border: 1px solid black;
+        }
+    }
+
+    .total-row {
+        border-bottom: 1px solid color($colors, primary, base);
+    }
+}

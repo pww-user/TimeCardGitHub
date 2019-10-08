@@ -1,0 +1,49 @@
+<ion-content class="content-primary" data-comp-id="content.1" data-img=""
+    style="padding: 0px; background-size: 100%; background-image: url(assets/images/logintwofactor/time40-phone.png);">
+    <div data-comp-id="div.1" data-img="">
+        <div data-comp-id="div.2"
+            style="padding: 20% 15% 10%; box-shadow: 0 10px 10px -10px #000000; margin: 10%; background-color: rgba(255, 255, 255, 0.7);"
+            text-center="">
+            <ion-icon class="ion-md-time" color="secondary" data-comp-id="icon.1"
+                style="font-size: 72px;"></ion-icon>
+            <div color="contrast" data-comp-id="text.1" ion-text=""
+                style="margin: 20px 0px; font-size: 22px; font-weight: normal;">Timecards</div>
+        </div>
+        <div data-comp-id="div.3" style="padding: 0px 10%; margin: 40px 0px;"
+            text-center="">
+            <ion-row data-comp-id="row.1" style="margin: 10px 0px 20px 0px;">
+                <ion-col class="middle-col" data-comp-id="column.1" text-center="">
+                    <ion-item data-comp-id="input.1">
+                        <ion-label color="medium" floating="">Authentication</ion-label>
+                        <ion-input [(ngModel)]="data.twofactor" type="text"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row data-comp-id="row.2">
+                <ion-col class="middle-col" data-comp-id="column.2" text-center=""></ion-col>
+            </ion-row>
+            <ion-row data-comp-id="row.3">
+                <ion-col class="button-col" data-comp-id="column.3" text-center="">
+                    <button (click)="action('submit')" block="" color="primary"
+                        data-comp-id="button.1" ion-button="">
+                        <span>Submit</span>
+                    </button>
+                </ion-col>
+            </ion-row>
+            <ion-row data-comp-id="row.4">
+                <ion-col data-comp-id="column.4"></ion-col>
+            </ion-row>
+            <ion-row data-comp-id="row.5" style="margin: 10px 0px;">
+                <ion-col data-comp-id="column.5">
+                    <button
+                        (click)="openUrl('https://community.powwowmobile.com/hc/en-us/articles/360007017531')"
+                        clear="" color="secondary" data-comp-id="button.2" icon-start="" ion-button=""
+                        style="">
+                        <ion-icon class=" ion-ios-help-circle-outline"></ion-icon>
+                        <span>App Template Guidelines</span>
+                    </button>
+                </ion-col>
+            </ion-row>
+        </div>
+    </div>
+</ion-content>

@@ -1,0 +1,20 @@
+{
+  "name": "Application",
+  "short_name": "Application",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/icon/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/icon/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#4e8ef7",
+  "theme_color": "#4e8ef7"
+}

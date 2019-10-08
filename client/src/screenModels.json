@@ -1,0 +1,706 @@
+{
+  "recenttimecards": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "Entries": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Project": {
+              "type": "string"
+            },
+            "Task": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "hasComment": {
+              "type": "boolean"
+            },
+            "shownTimes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "time": {
+                    "type": "string"
+                  }
+                }
+              },
+              "update": {
+                "type": "none"
+              }
+            },
+            "RowTotal": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "allTimes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "time": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "goComments": {
+              "type": "action"
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
+      },
+      "periodEndDate": {
+        "type": "string"
+      },
+      "lastWeekDate": {
+        "type": "string"
+      },
+      "originalDateString": {
+        "type": "string"
+      },
+      "shownDefaultDays": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "dayOfWeek": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "date": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
+      },
+      "allDefaultDays": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "dayOfWeek": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "save": {
+        "type": "action"
+      }
+    },
+    "id": "recenttimecards",
+    "sourcePath": "recenttimecards"
+  },
+  "login": {
+    "type": "object",
+    "comment": "Login",
+    "properties": {
+      "username": {
+        "type": "string",
+        "label": "username"
+      },
+      "password": {
+        "type": "string",
+        "label": "password"
+      },
+      "submit": {
+        "type": "action",
+        "parameters": {
+          "username": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "id": "login",
+    "sourcePath": "login"
+  },
+  "chooseproject": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "Group": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Title": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "Description": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "icon": {
+              "type": "string"
+            },
+            "chooseActivity": {
+              "type": "action"
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
+      },
+      "back": {
+        "type": "action"
+      }
+    },
+    "id": "chooseproject",
+    "sourcePath": "chooseproject"
+  },
+  "timeentry": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "timeComments": {
+        "type": "action"
+      },
+      "newProject": {
+        "type": "action"
+      },
+      "submit": {
+        "type": "action"
+      },
+      "save": {
+        "type": "action"
+      },
+      "shownDefaultDays": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "dayOfWeek": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "date": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "allDefaultDays": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "dayOfWeek": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "periodEndDate": {
+        "type": "string"
+      },
+      "lastWeekDate": {
+        "type": "string"
+      },
+      "originalDateString": {
+        "type": "string"
+      },
+      "Entries": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "hasComment": {
+              "type": "boolean"
+            },
+            "shownTimes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "time": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "allTimes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "time": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "rowTotal": {
+              "type": "string"
+            },
+            "comments": {
+              "type": "action"
+            },
+            "Project": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "Task": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
+      },
+      "dayTotals": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "string"
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
+      },
+      "weekTotal": {
+        "type": "string",
+        "update": {
+          "type": "none"
+        }
+      },
+      "shownDayTotals": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            }
+          }
+        }
+      }
+    },
+    "id": "timeentry",
+    "sourcePath": "timeentry"
+  },
+  "menuicons": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "Listone": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "items": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
+      },
+      "Listoneheader": {
+        "type": "string"
+      },
+      "Listtwo": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "items": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
+      }
+    },
+    "id": "menuicons",
+    "sourcePath": "menuicons"
+  },
+  "chooseactivity": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "Group": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Title": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "Description": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "icon": {
+              "type": "string"
+            },
+            "save": {
+              "type": "action"
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
+      },
+      "back": {
+        "type": "action"
+      }
+    },
+    "id": "chooseactivity",
+    "sourcePath": "chooseactivity"
+  },
+  "commentsdaily": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "time": {
+        "type": "string"
+      },
+      "RowTotal": {
+        "type": "string",
+        "update": {
+          "type": "none"
+        }
+      },
+      "Comments": {
+        "type": "string"
+      },
+      "back": {
+        "type": "action"
+      },
+      "shownDefaultDays": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "dayOfWeek": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "date": {
+              "type": "string"
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
+      },
+      "allDefaultDays": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "dayOfWeek": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "comments": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "cancel": {
+        "type": "action"
+      },
+      "save": {
+        "type": "action"
+      },
+      "selectedDate": {
+        "type": "object",
+        "properties": {}
+      },
+      "goComments": {
+        "type": "method",
+        "parameters": {}
+      },
+      "AdditionalComments": {
+        "type": "string"
+      }
+    },
+    "id": "commentsdaily",
+    "sourcePath": "commentsdaily"
+  },
+  "commentsweek": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "time": {
+        "type": "string"
+      },
+      "RowTotal": {
+        "type": "string",
+        "update": {
+          "type": "none"
+        }
+      },
+      "Comments": {
+        "type": "string"
+      },
+      "back": {
+        "type": "action"
+      }
+    },
+    "id": "commentsweek",
+    "sourcePath": "commentsweek"
+  },
+  "previoustimecards": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "Group": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Title": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "Description": {
+              "type": "string"
+            },
+            "icon": {
+              "type": "string"
+            },
+            "Date": {
+              "type": "string"
+            },
+            "timecard": {
+              "type": "action"
+            }
+          }
+        }
+      }
+    },
+    "id": "previoustimecards",
+    "sourcePath": "secondintermediate"
+  },
+  "logintwofactor": {
+    "type": "object",
+    "comment": "Login",
+    "properties": {
+      "submit": {
+        "type": "action",
+        "parameters": {
+          "username": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      },
+      "twofactor": {
+        "type": "string"
+      }
+    },
+    "id": "logintwofactor"
+  },
+  "timeview": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "back": {
+        "type": "action"
+      },
+      "shownDefaultDays": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "dayOfWeek": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "allDefaultDays": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "dayOfWeek": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "periodEndDate": {
+        "type": "string"
+      },
+      "lastWeekDate": {
+        "type": "string"
+      },
+      "originalDateString": {
+        "type": "string"
+      },
+      "Entries": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "hasComment": {
+              "type": "boolean"
+            },
+            "shownTimes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "time": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "allTimes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "time": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "rowTotal": {
+              "type": "string"
+            },
+            "comments": {
+              "type": "action"
+            },
+            "Project": {
+              "type": "string"
+            },
+            "Task": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "dayTotals": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "weekTotal": {
+        "type": "string"
+      },
+      "shownDayTotals": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "id": "timeview"
+  },
+  "menu": {
+    "type": "object",
+    "properties": {
+      "home": {
+        "type": "action"
+      },
+      "settings": {
+        "type": "action"
+      }
+    },
+    "id": "menu"
+  },
+  "settings": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {},
+    "id": "settings"
+  }
+}

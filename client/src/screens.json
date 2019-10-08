@@ -1,0 +1,99 @@
+{
+  "id": "__BASE__",
+  "name": "TimeCardGitHub",
+  "screens": [
+    {
+      "id": "login",
+      "name": "Login",
+      "sourceScreenId": "login",
+      "sourceAppId": "TimecardTemplate",
+      "disableMenuSwipe": true,
+      "extraViews": [
+        "PhonePortrait",
+        "Desktop",
+        "TabletLandscape"
+      ]
+    },
+    {
+      "id": "logintwofactor",
+      "name": "Login TwoFactor",
+      "extraViews": [
+        "PhonePortrait",
+        "PhonePortrait",
+        "PhonePortrait",
+        "Desktop",
+        "TabletLandscape"
+      ],
+      "sourceScreenId": "logintwofactor",
+      "sourceAppId": "TimecardTemplate",
+      "disableMenuSwipe": true
+    },
+    {
+      "id": "timeentry",
+      "name": "Time Entry",
+      "sourceScreenId": "timeentry",
+      "sourceAppId": "TimecardTemplate"
+    },
+    {
+      "id": "timeview",
+      "name": "TimeView",
+      "sourceScreenId": "timeview",
+      "sourceAppId": "TimecardTemplate"
+    },
+    {
+      "id": "commentsdaily",
+      "name": "Comments Daily",
+      "sourceScreenId": "commentsdaily",
+      "sourceAppId": "TimecardTemplate"
+    },
+    {
+      "id": "commentsweek",
+      "name": "Comments Week",
+      "sourceScreenId": "commentsweek",
+      "sourceAppId": "TimecardTemplate"
+    },
+    {
+      "id": "chooseproject",
+      "name": "Choose Project",
+      "sourceScreenId": "chooseproject",
+      "sourceAppId": "TimecardTemplate"
+    },
+    {
+      "id": "chooseactivity",
+      "name": "Choose Activity",
+      "sourceScreenId": "chooseactivity",
+      "sourceAppId": "TimecardTemplate"
+    },
+    {
+      "id": "menuicons",
+      "name": "Menu Icons",
+      "sourceScreenId": "menuicons",
+      "sourceAppId": "TimecardTemplate"
+    },
+    {
+      "id": "previoustimecards",
+      "name": "Previous TimeCards",
+      "sourceScreenId": "previoustimecards",
+      "sourceAppId": "TimecardTemplate"
+    },
+    {
+      "id": "recenttimecards",
+      "name": "Recent Timecards",
+      "sourceScreenId": "recenttimecards",
+      "sourceAppId": "TimecardTemplate",
+      "extraViews": [
+        "PhonePortrait",
+        "Desktop"
+      ]
+    },
+    {
+      "id": "settings",
+      "name": "Settings",
+      "modal": true,
+      "sourceScreenId": "settings",
+      "sourceAppId": "TimecardTemplate",
+      "preventAutoDismiss": true
+    }
+  ],
+  "startScreen": "login"
+}
