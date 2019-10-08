@@ -1,5 +1,5 @@
 export let mock_commentsweek = {
-    back: function back(params) {
-        this.go("recenttimecards");
-    }
+ back: async function back(params) {
+ await this.go("recenttimecards");
+ }
 };

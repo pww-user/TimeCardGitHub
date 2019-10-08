@@ -1,101 +1,101 @@
 {
   "Entries": [
     {
-        "$i": 0,
-        "Project": "000191",
-        "Task": "001\n",
-        "Locality": "AK\n",
-        "Description": "CRMG SOW#2- Coding Work\n",
-        "RowTotal": "6.25",
-        "shownTimes": [
-            {
-            "time": "0"
-            },
-            {
-            "time": "10.25"
-            },
-            {
-            "time": "0"
-            },
-            {
-            "time": "0"
-            },
-            {
-            "time": "0"
-            }
-        ],
-        "allTimes": [
-            {
-                "time": "5.25"
-            },
-            {
-                "time": "0"
-            },
-            {
-                "time": "10.25"
-            },
-            {
-                "time": "0"
-            },
-            {
-                "time": "0"
-            },
-            {
-                "time": "0"
-            },
-            {
-                "time": "0"
-            }
-        ]
+      "$i": 0,
+      "Project": "000191",
+      "Task": "001\n",
+      "Locality": "AK\n",
+      "Description": "CRMG SOW#2- Coding Work\n",
+      "RowTotal": "6.25",
+      "shownTimes": [
+        {
+          "time": "0"
+        },
+        {
+          "time": "10.25"
+        },
+        {
+          "time": "0"
+        },
+        {
+          "time": "0"
+        },
+        {
+          "time": "0"
+        }
+      ],
+      "allTimes": [
+        {
+          "time": "5.25"
+        },
+        {
+          "time": "0"
+        },
+        {
+          "time": "10.25"
+        },
+        {
+          "time": "0"
+        },
+        {
+          "time": "0"
+        },
+        {
+          "time": "0"
+        },
+        {
+          "time": "0"
+        }
+      ]
     },
     {
-        "$i": 1,
-        "Project": "000192",
-        "Task": "002\n",
-        "Locality": "AK\n",
-        "Description": "CRMG SOW#2- Coding Work\n",
-        "RowTotal": "6.25",
-        "hasComment": true,
-        "shownTimes": [
-            {
-                "time": "0"
-            },
-            {
-                "time": "10.25"
-            },
-            {
-                "time": "0"
-            },
-            {
-                "time": "4.75"
-            },
-            {
-                "time": "0"
-            }
-        ],
-        "allTimes": [
-            {
-                "time": "5.25"
-            },
-            {
-                "time": "0"
-            },
-            {
-                "time": "10.25"
-            },
-            {
-                "time": "0"
-            },
-            {
-                "time": "0"
-            },
-            {
-                "time": "2"
-            },
-            {
-                "time": "0"
-            }
-        ]
+      "$i": 1,
+      "Project": "000192",
+      "Task": "002\n",
+      "Locality": "AK\n",
+      "Description": "CRMG SOW#2- Coding Work\n",
+      "RowTotal": "6.25",
+      "hasComment": true,
+      "shownTimes": [
+        {
+          "time": "0"
+        },
+        {
+          "time": "10.25"
+        },
+        {
+          "time": "0"
+        },
+        {
+          "time": "4.75"
+        },
+        {
+          "time": "0"
+        }
+      ],
+      "allTimes": [
+        {
+          "time": "5.25"
+        },
+        {
+          "time": "0"
+        },
+        {
+          "time": "10.25"
+        },
+        {
+          "time": "0"
+        },
+        {
+          "time": "0"
+        },
+        {
+          "time": "2"
+        },
+        {
+          "time": "0"
+        }
+      ]
     }
   ],
   "periodEndDate": "Jan 06 2018",
@@ -124,8 +124,8 @@
   ],
   "allDefaultDays": [
     {
-        "dayOfWeek": "Sun",
-        "date": "11"
+      "dayOfWeek": "Sun",
+      "date": "11"
     },
     {
       "dayOfWeek": "Mon",
@@ -148,8 +148,8 @@
       "date": "16"
     },
     {
-        "dayOfWeek": "Sat",
-        "date": "17"
+      "dayOfWeek": "Sat",
+      "date": "17"
     }
   ]
 }

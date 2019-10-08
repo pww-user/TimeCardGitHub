@@ -1,56 +1,66 @@
 {
-    "shownDefaultDays": [
-        {
-            "dayOfWeek": "Mon",
-            "date": "01"
-        }, {
-            "dayOfWeek": "Tue",
-            "date": "02"
-        }, {
-            "dayOfWeek": "Wed",
-            "date": "03"
-        }, {
-            "dayOfWeek": "Thur",
-            "date": "04"
-        }, {
-            "dayOfWeek": "Fri",
-            "date": "05"
-        }
-    ],
-    "allDefaultDays": [
-        {
-            "dayOfWeek": "Sun",
-            "date": "11"
-        }, {
-            "dayOfWeek": "Mon",
-            "date": "12"
-        }, {
-            "dayOfWeek": "Tue",
-            "date": "13"
-        }, {
-            "dayOfWeek": "Wed",
-            "date": "14"
-        }, {
-            "dayOfWeek": "Thur",
-            "date": "15"
-        }, {
-            "dayOfWeek": "Fri",
-            "date": "16"
-        }, {
-            "dayOfWeek": "Sat",
-            "date": "17"
-        }
-    ],
-    "selectedDate": {
-        "dayOfWeek": "Fri",
-        "date": "16"
+  "shownDefaultDays": [
+    {
+      "dayOfWeek": "Mon",
+      "date": "01"
     },
-    "item === data": {
-        "selectedDate ? 'column-light' : 'column-contrast'": "",
-        "selectedDate ? 'column-light' : 'column-highlight'": ""
+    {
+      "dayOfWeek": "Tue",
+      "date": "02"
     },
-    "Comments": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru.",
-    "AdditionalComments": "Proin sit amet libero luctus, ultrices turpis et, feugiat felis. Cras euismod sollicitudin consectetur. Proin faucibus elit risus, at vehicula nisi ullamcorper eget. Quisque vitae risus imperdiet, pretium nunc nec, viverra orci. Nulla congue felis in imperdiet sollicitudin. Nullam tincidunt elementum massa eu ullamcorper. Nam at libero sed tortor finibus scelerisque. Donec accumsan augue sed facilisis laoreet.",
-    "time": "4",
-    "RowTotal": "20"
+    {
+      "dayOfWeek": "Wed",
+      "date": "03"
+    },
+    {
+      "dayOfWeek": "Thur",
+      "date": "04"
+    },
+    {
+      "dayOfWeek": "Fri",
+      "date": "05"
+    }
+  ],
+  "allDefaultDays": [
+    {
+      "dayOfWeek": "Sun",
+      "date": "11"
+    },
+    {
+      "dayOfWeek": "Mon",
+      "date": "12"
+    },
+    {
+      "dayOfWeek": "Tue",
+      "date": "13"
+    },
+    {
+      "dayOfWeek": "Wed",
+      "date": "14"
+    },
+    {
+      "dayOfWeek": "Thur",
+      "date": "15"
+    },
+    {
+      "dayOfWeek": "Fri",
+      "date": "16"
+    },
+    {
+      "dayOfWeek": "Sat",
+      "date": "17"
+    }
+  ],
+  "selectedDate": {
+    "dayOfWeek": "Fri",
+    "date": "16"
+  },
+  "item === data": {
+    "selectedDate ? 'column-light' : 'column-contrast'": "",
+    "selectedDate ? 'column-light' : 'column-highlight'": ""
+  },
+  "Comments": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru.",
+  "AdditionalComments": "Proin sit amet libero luctus, ultrices turpis et, feugiat felis. Cras euismod sollicitudin consectetur. Proin faucibus elit risus, at vehicula nisi ullamcorper eget. Quisque vitae risus imperdiet, pretium nunc nec, viverra orci. Nulla congue felis in imperdiet sollicitudin. Nullam tincidunt elementum massa eu ullamcorper. Nam at libero sed tortor finibus scelerisque. Donec accumsan augue sed facilisis laoreet.",
+  "time": "4",
+  "RowTotal": "20"
 }

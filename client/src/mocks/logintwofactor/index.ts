@@ -1,3 +1,3 @@
-export let mock_logintwofactor = { submit: function submit(params) {
-        this.go("timeentry");
-    } };
+export let mock_logintwofactor = { submit: async function submit(params) {
+ await this.go("timeentry");
+ } };

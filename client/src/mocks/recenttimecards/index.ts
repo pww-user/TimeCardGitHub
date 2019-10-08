@@ -1,5 +1,5 @@
 export let mock_recenttimecards = {
-    Entries_goComments: function Entries_goComments(params) {
-        this.go("commentsweek");
-    }
+ Entries_goComments: async function Entries_goComments(params) {
+ await this.go("commentsweek");
+ }
 };

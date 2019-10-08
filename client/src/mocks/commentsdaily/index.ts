@@ -1,15 +1,15 @@
 export let mock_commentsdaily = {
-    back: function back(params) {
-        this.go("timeentry");
-    },
-    cancel: function cancel(params) {
-        this.go("timeentry");
-    },
-    save: function save(params) {
-        this.go("timeentry");
-    },
-    goComments: function goComments(params) {
-        this.data.selectedDate = this.data.allDefaultDays[params.index];
-        this.go("commentsdaily");
-    }
+ back: async function back(params) {
+ await this.go("timeentry");
+ },
+ cancel: async function cancel(params) {
+ await this.go("timeentry");
+ },
+ save: async function save(params) {
+ await this.go("timeentry");
+ },
+ goComments: async function goComments(params) {
+ this.data.selectedDate = this.data.allDefaultDays[params.index];
+ await this.go("commentsdaily");
+ }
 };

@@ -1,8 +1,8 @@
 export let mock_timeview = {
-    timeComments: function timeComments(params) {
-        this.go("commentsdaily");
-    },
-    back: function back(params) {
-        this.go("timeentry");
-    }
+ timeComments: async function timeComments(params) {
+ await this.go("commentsdaily");
+ },
+ back: async function back(params) {
+ await this.go("timeentry");
+ }
 };
